@@ -16,10 +16,15 @@ body {
     background: linear-gradient(90deg, #000000, #333333);
     padding: 15px;
     border-radius: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .navbar-brand img {
-    max-height: 80px;
+    max-height: 50px;
 }
 
 .navbar-brand {
@@ -29,7 +34,6 @@ body {
 
 .navbar-brand img {
     margin-right: 10px;
-    transform: scale(2)
 }
 
 .navbar-nav .nav-link {
@@ -52,6 +56,7 @@ body {
     justify-content: center;
     text-align: left;
     color: #ffcc00;
+    margin-top: 80px; /* Adjusted to prevent content from being hidden behind navbar */
 }
 
 #hero::after {
@@ -123,6 +128,7 @@ button:hover {
     display: inline-block;
 }
 
+
 .navbar-brand img {
     transition: transform 0.3s ease-in-out;
 }
@@ -130,3 +136,10 @@ button:hover {
 /* .navbar-brand img:hover {
     transform: scale(4);
 } */
+
+
+.instagram-media {
+    max-width: 400px !important;
+    margin: auto;
+    display: block;
+}
