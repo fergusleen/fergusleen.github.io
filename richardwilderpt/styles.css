@@ -139,8 +139,129 @@ button:hover {
 } */
 
 
+/* Style the Instagram embed container */
+#insta {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ensure embedded content (iframe) blends well */
 .instagram-media {
-    max-width: 400px !important;
+    background-color: #000 !important;
+    color: #fff !important;
+    max-width: 100% !important;
     margin: auto;
     display: block;
+    padding: 10px; /* Optional: Adds some spacing */
+    border-radius: 10px; /* Optional: Rounds corners */
+}
+
+/* Ensure the blockquote inside the embed follows the theme */
+.instagram-media blockquote {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+
+
+#about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; /* Space between text and image */
+}
+
+.about-text {
+    flex: 1; /* Allows the text to take up available space */
+}
+
+.about-image {
+    width: 250px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Optional: Subtle shadow */
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+    #about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        width: 80%;
+        margin-top: 20px;
+    }
+}
+
+#achievements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; /* Space between text and image */
+}
+
+.achievements-text {
+    flex: 1; /* Allows text to take available space */
+}
+
+.achievements-image {
+    width: 250px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Optional: Subtle shadow */
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+    #achievements {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .achievements-image {
+        width: 80%;
+        margin-top: 20px;
+    }
+}
+
+#contact-insta {
+    display: flex;
+    justify-content: space-between; /* Keeps Contact & Instagram side by side */
+    gap: 40px; /* Space between sections */
+    align-items: start; /* Aligns elements to the top */
+}
+
+.contact-text {
+    flex: 1.5; /* Makes Contact section wider */
+}
+
+.insta-content {
+    flex: 1; /* Allows Instagram embed to take up the right side */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px; /* Keeps embed size reasonable */
+        background-color: #000; /* Black background */
+        color: #fff; /* White text */
+        padding: 20px;
+    
+}
+
+
+/* Responsive: Stack sections on smaller screens */
+@media (max-width: 768px) {
+    #contact-insta {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .insta-content {
+        max-width: 100%;
+    }
 }

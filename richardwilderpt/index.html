@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap">
 </head>
-<body style="font-family: 'Oswald', sans-serif; text-align: left;">
+<body style="font-family: 'Oswald', sans-serif;">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container d-flex justify-content-between">
             <a class="navbar-brand" href="#">
@@ -24,6 +24,7 @@
                     <li class="nav-item"><a class="nav-link" href="#approach">My Approach</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#acheivements">Acheivements</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     <li class="nav-item d-flex align-items-center">
                         <a href="https://www.facebook.com/richardwilderpt" class="nav-link px-2">
@@ -33,6 +34,12 @@
                             <i class="fa-brands fa-instagram fa-lg text-warning"></i>
                         </a>
                     </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <a href="https://www.strava.com/athletes/2094078" class="nav-link px-2" target="_blank">
+                            <i class="fa-brands fa-strava fa-lg text-warning"></i>
+                        </a>
+                    </li>
+                    
                 </ul>
             </div>
         </div>
@@ -69,31 +76,61 @@
         <p>"Richard’s HYROX training transformed my fitness and competition performance." - Paul</p>
         <p>"I overcame injury and regained strength thanks to Richard's tailored approach." - Mari</p>
     </section>
-    
-    <section id="contact" class="container py-5">
-        <h2>Contact</h2>
-        <p><strong>Richard Wilder PT</strong></p>
-        <p>Phone: <a href="tel:07815118647">07815 118647</a></p>
-        <p>Email: <a href="mailto:richardwilderpt@outlook.com">richardwilderpt@outlook.com</a></p>
-        <form id="contact-form" class="mt-4">
-            <input type="text" id="name" placeholder="Your Name" required class="form-control mb-3">
-            <input type="email" id="email" placeholder="Your Email" required class="form-control mb-3">
-            <textarea id="message" placeholder="Your Message" required class="form-control mb-3"></textarea>
-            <button type="submit" class="btn btn-warning">Send Message</button>
-        </form>
-    </section>
-    <section id="insta" class="container py-5">
-        <h2 class="text-center">Latest from Instagram</h2>
-        <div class="text-center">
-            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/YOUR_REEL_ID/" data-instgrm-version="14"></blockquote>
+
+    <section id="achievements" class="container py-5 bg-secondary text-white d-flex align-items-center">
+        <div class="achievements-text">
+            <h2>Personal Achievements</h2>
+            <p>As a triathlete I have won a European Championship, a World Bronze Medal. I've won many domestic races, the biggest of these being the annual Outlaw Triathlon.</p>
+            <p>As a rower, on the water I won 2 Commonwealth Bronze Medals and numerous British titles.</p>
+            <p>On the indoor rower, I've been Welsh, British, and World Champion.</p>
+            <p>As a runner, I was the first person in Wales to achieve the sought-after 500 parkrun T-shirt.</p>
+            <p>My personal bests are:</p>
+            <ul>
+                <li>5k - 16:30</li>
+                <li>10k - 34:10</li>
+                <li>Half Marathon - 1:14.53</li>
+            </ul>
+            <p>While I've had some successes, it's as a personal trainer that I feel I've had my most significant achievements, helping people fulfill results beyond what they realized was possible.</p>
         </div>
+        <img src="images/parkrunts.jpg" alt="Parkrun Achievements" class="achievements-image">
     </section>
     
-    <!-- Instagram Embed Script -->
-    <script async src="https://www.instagram.com/embed.js"></script>
     
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+
+                <section id="about" class="container py-5 d-flex align-items-center">
+                    <div class="about-text">
+                        <h2>About Me</h2>
+                        <p>I'm Richard, a 50-something personal trainer based in Cardiff. When I was younger, I was fortunate enough to represent Wales and Great Britain competing worldwide at many international competitions.</p>
+                        <p>Like everyone, I am still working hard to fight off the inevitable ageing process with the usual aches and pains that come with age. This perspective, my athletic experience, and building 20 years of personal training experience have provided a great platform to support individuals to change their lives irrespective of age, weight, fitness levels or physical ability.</p>
+                    </div>
+                    <img src="images/richard.jpg" alt="Richard Wilder" class="about-image">
+                </section>
+                
+                <section id="contact-insta" class="container py-5 d-flex align-items-start">
+                    <!-- Contact Section -->
+                    <div id="contact" class="contact-text flex-grow-1">
+                        <h2>Contact</h2>
+                        <p><strong>Richard Wilder PT</strong></p>
+                        <p>Phone: <a href="tel:07815118647">07815 118647</a></p>
+                        <p>Email: <a href="mailto:richardwilderpt@outlook.com">richardwilderpt@outlook.com</a></p>
+                        <form id="contact-form" class="mt-4">
+                            <input type="text" id="name" placeholder="Your Name" required class="form-control mb-3">
+                            <input type="email" id="email" placeholder="Your Email" required class="form-control mb-3">
+                            <textarea id="message" placeholder="Your Message" required class="form-control mb-3"></textarea>
+                            <button type="submit" class="btn btn-warning">Send Message</button>
+                        </form>
+                    </div>
+                
+                    <!-- Instagram Embed (Without Heading) -->
+                    <div id="insta" class="insta-content">
+                        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DEIR9aHNzaq/" data-instgrm-version="14"></blockquote>
+                    </div>
+                </section>
+                
+                
+  
+    <!-- Instagram Embed Script DEIR9aHNzaq
+            -->
+    <script async src="https://www.instagram.com/embed.js"></script> 
 </body>
 </html>
