@@ -17,3 +17,20 @@ document.addEventListener("DOMContentLoaded", function() {
         contactForm.reset();
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const eventDate = new Date("2025-05-31"); // Set exact event date here
+    const daysLeftElement = document.getElementById("days-left");
+
+    function updateCountdown() {
+        const now = new Date();
+        const diffTime = eventDate - now;
+        const daysLeft = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+
+        document.getElementById('days-left').innerText = daysLeft >= 0 ? daysLeft : 0;
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 86400000); // Update daily
+});
