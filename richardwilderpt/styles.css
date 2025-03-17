@@ -108,7 +108,7 @@ h1, h1, h2, h3, h4, h5, h6, .navbar, .nav-link, .lead, .btn, input, textarea {
     justify-content: center;
     text-align: left;
     color: #D4ED31;
-    margin-top: 80px; /* Adjusted to prevent content from being hidden behind navbar */
+    /*margin-top: 80px; /* Adjusted to prevent content from being hidden behind navbar */
 }
 
 #hero::after {
@@ -220,67 +220,63 @@ button:hover {
 
 
 
-#about {
+
+.about-image {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+    margin-left: 20px;
+}
+
+section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px; /* Space between text and image */
+    gap: 20px;
 }
 
-.about-text {
-    flex: 1; /* Allows the text to take up available space */
+section img {
+    flex-shrink: 0; /* prevents shrinking on smaller screens */
 }
 
-.about-image {
-    width: 250px; /* Adjust size as needed */
-    height: auto;
-    border-radius: 10px; /* Optional: Rounded corners */
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Optional: Subtle shadow */
-}
 
 /* Make it responsive */
 @media (max-width: 768px) {
+    #approach, 
+    #services, 
+    #testimonials,
+    #achievements,
+    #faq-container,
     #about {
         flex-direction: column;
         text-align: center;
     }
 
-    .about-image {
+    .about-image, .achievements-image, #faq-container img {
         width: 80%;
         margin-top: 20px;
+        margin-left: 0; /* Resets any margins from desktop layout */
+    }
+
+    .approach-text, .achievements-text, .faq-content, .flex-grow-1 {
+        width: 100%;
     }
 }
 
-#achievements {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px; /* Space between text and image */
+
+#achievements h2, #achievements h3, #achievements h4 {
+    font-family: 'Brutal Type', sans-serif;
 }
 
-.achievements-text {
-    flex: 1; /* Allows text to take available space */
+#achievements ul {
+    padding-left: 1.2rem;
 }
 
-.achievements-image {
-    width: 250px; /* Adjust size as needed */
-    height: auto;
-    border-radius: 10px; /* Optional: Rounded corners */
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Optional: Subtle shadow */
+#achievements ul li {
+    margin-bottom: 8px;
 }
 
-/* Make it responsive */
-@media (max-width: 768px) {
-    #achievements {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .achievements-image {
-        width: 80%;
-        margin-top: 20px;
-    }
-}
 
 #contact-insta {
     display: flex;
@@ -331,3 +327,39 @@ button:hover {
     outline: none;
     box-shadow: none;
 }
+
+.accordion-button {
+    background-color: #333;
+    color: #fff;
+    font-weight: 700;
+}
+
+.accordion-item {
+    background-color: #222;
+    color: #fff;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #ffcc00;
+    color: #000;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+
+#faq-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* <-- Important change */
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#faq-container img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+

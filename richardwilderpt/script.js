@@ -34,3 +34,4 @@ document.addEventListener("DOMContentLoaded", function() {
     updateCountdown();
     setInterval(updateCountdown, 86400000); // Update daily
 });
+
